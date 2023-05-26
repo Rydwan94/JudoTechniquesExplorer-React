@@ -1,0 +1,8 @@
+.techniquesList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* zmień wartość 250px na minimalną szerokość karty */
+    justify-items: center; 
+    gap: 50px; 
+    margin-top: 50px;
+    width: 100%;
+}
