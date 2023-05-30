@@ -2,7 +2,7 @@
     background-color: #163A5F;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid #014a8f;
 }
   
   .searcherHeading {
@@ -14,6 +14,7 @@
   .searcherForm {
     display: flex;
     align-items: center;
+    
     gap: 10px;
   }
   
@@ -23,11 +24,11 @@
   }
   
   .searcherSelect {
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 5px;
+    font-size: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #ffffff;
     color: #333;
     transition: border-color 0.3s ease;
   }
@@ -39,27 +40,36 @@
   }
   
   .searcherButton {
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
+    padding: 5px;
+    font-size: 15px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    border: 1px solid #fbfbfb;
+    background: none;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   .searcherButton:hover {
-    background-color: #0056b3;
+    background-color: #fff;
+    color: black;
   }
   
-  .searcherButton:first-of-type {
-    background-color: #17a2b8;
+  .searcherButton:last-of-type {
+    display: flex;
+    align-items: center;
+
+    background: none;
+  }
+
+  .searcherButton:last-of-type svg {
+    margin-right: 5px;
   }
   
-  .searcherButton:first-of-type:hover {
-    background-color: #117a8b;
+  .searcherButton:last-of-type:hover {
+    color: white;
+    background-color: #b90000;
   }
 
 
@@ -68,7 +78,29 @@
     0% {
         opacity: 0;
     }
+    50% {
+      opacity: .5;
+    }
     100% {
         opacity: 1;
     }
+}
+
+
+@media screen and (max-width:768px) {
+
+  .searcherHeading {
+    text-align: center;
+  }
+  .searcherForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .searcherButton {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+  }
 }

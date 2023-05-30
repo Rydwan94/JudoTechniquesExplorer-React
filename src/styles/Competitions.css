@@ -1,0 +1,40 @@
+
+.competitionsContainer {
+    padding: 20px 0;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.parallaxContainer {
+    height: 600px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+
+
+.parallaxContainer div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.upcomingTournaments {
+    margin-top: 50px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.upcomingTournaments ul {
+    list-style: none;
+}
+

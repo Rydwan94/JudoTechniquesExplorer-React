@@ -1,5 +1,8 @@
 import { useState, useContext } from 'react';
 
+import {FaHeart} from "react-icons/fa";
+
+
 import { techniquesContext } from '../context/TechniquesContext';
 
 import '../styles/TechniquesSearcher.css'
@@ -40,13 +43,13 @@ const TechniquesSearcher = () => {
           <option value="2nd Kyu">2nd Kyu</option>
           <option value="1st Kyu">1st Kyu</option>
         </select>
-        <button onClick={() => handleTechniqueCategory('Tachi Waza')}  >
+        <button className='searcherButton' onClick={() => handleTechniqueCategory('Tachi Waza')}  >
           Tachi-Waza
         </button>
-        <button onClick={() => handleTechniqueCategory('Ne Waza')}  >
+        <button className='searcherButton' onClick={() => handleTechniqueCategory('Ne Waza')}  >
           Ne-Waza
         </button>
-        <button onClick={handleFavouritesTechniques}>Favourites Techniques</button>
+        <button className='searcherButton' onClick={handleFavouritesTechniques}><FaHeart/> Techniques</button>
       </div>
 
     </div>

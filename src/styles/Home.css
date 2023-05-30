@@ -13,7 +13,6 @@
   border-radius: 20px;
   margin-bottom: 150px;
   background: #163b5f95;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(19.5px);
   -webkit-backdrop-filter: blur(19.5px);
   border-radius: 10px;
@@ -27,7 +26,6 @@
   margin-bottom: 150px;
   padding: 40px;
   background-color: #163b5f95;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(19.5px);
   -webkit-backdrop-filter: blur(19.5px);
   border-radius: 10px;

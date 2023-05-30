@@ -27,12 +27,12 @@ nav {
 
 main {
   flex-grow: 1;
-  background-color: #0A2239;
-  padding: 20px;
+  background: linear-gradient(to bottom, #031a30, #112B44, #111c25);
+  /* padding: 20px; */
 }
 
 footer {
   padding: 20px 0;
   height: auto;
-  background-color: #163A5F;
+  background-color: #111c25;
 }
