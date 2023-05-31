@@ -18,7 +18,9 @@ function App() {
           <main>
             <Pages />
           </main>
-          <footer></footer>
+          <footer>
+            
+          </footer>
         </div>
       </TechniquesProvider>
     </HashRouter>

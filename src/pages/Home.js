@@ -6,6 +6,8 @@ import judoPhilosophy from "../img/judoPhilosophy.png";
 
 import "../styles/Home.css";
 
+import brandIcon from "../img/brandIcon.png";
+
 const Home = () => {
   const navigate = useNavigate();
 
@@ -16,7 +18,16 @@ const Home = () => {
   return (
     <div className="home">
       <header>
-        <h1>Welcome to TheJudoPath!</h1>
+        <div>
+        <img src={brandIcon} alt="symbol" />
+        <h1>
+          Welcome to TheJudoPath!
+        </h1>
+        </div>
+
+        <p>
+          Discover the world of Judo with TheJudoPath.
+        </p>
       </header>
       <section>
         <img src={judoTechnique} alt="Various judo techniques" />

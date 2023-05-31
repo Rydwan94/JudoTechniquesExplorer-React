@@ -1,4 +1,3 @@
-
 .historyContainer {
   display: flex;
   flex-direction: column;
@@ -10,16 +9,15 @@
 .historyTitle {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 42px;
   color: #fff;
   background-color: #123151;
-  justify-content: center;
-  align-items: center;
   border-radius: 5%;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   animation: 1s ease-out 0s 1 changeOpacity;
 }
-
 
 .historyTitle p {
   position: relative;
@@ -39,46 +37,88 @@
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   width: 100%;
+  text-align: center;
+
+}
+
+.historyCard:nth-child(2n),
+.historyCard:nth-child(3) {
+  animation: 0.7s ease-out 0s 1;
 }
 
 .historyCard:nth-child(2n) {
-  animation: 0.7s ease-out 0s 1 slideInFromRight;
+  animation-name: slideInFromRight;
 }
 
 .historyCard:nth-child(3) {
   flex-direction: row-reverse;
-  animation: 0.7s ease-out 0s 1 slideInFromLeft;
+  animation-name: slideInFromLeft;
 }
 
 .historyCard img {
   width: 30%;
   height: auto;
   object-fit: cover;
-  margin-left: -130px;
-}
-
-.historyCard:nth-child(2) img {
-  border-radius: 0 0 0 100px;
-  width: 23%;
-}
-
-.historyCard:nth-child(3) img {
-  margin-right: -100px;
-  margin-left: 0;
 }
 
 .historyCard div {
   padding: 30px;
 }
 
-.historyCard h2 {
+.historyCard h2,
+.historyCard p {
   margin-bottom: 20px;
   color: #ffffff;
 }
 
 .historyCard p {
-  color: #ffffff;
   text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  .historyContainer {
+    padding: 20px;
+  }
+
+  .historyTitle {
+    font-size: 28px;
+    height: 165px;
+    margin-bottom: 100px;
+  }
+
+  .historyTitle img {
+    width: 37%;
+  }
+
+  .historyCard {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .historyCard img {
+    width: 70%;
+    margin: -110px 0 0;
+  }
+
+  .historyCard:nth-child(2) img {
+    width: 50% ;
+    border-radius: 50px;
+  }
+
+  .historyCard div {
+    padding: 20px;
+  }
+
+  .historyCard h2 {
+    font-size: 24px;
+  }
+
+  .historyCard p {
+    font-size: 16px;
+    word-spacing: -2px;
+  }
 }
 
 @keyframes slideInFromLeft {
@@ -103,55 +143,7 @@
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .historyContainer {
-    padding: 20px;
-  }
-
-  .historyTitle {
-    font-size: 28px;
-    height: 165px;
-    margin-bottom: 100px;
-  }
-
-  .historyTitle img {
-    width: 37%;
-  }
-
-  .historyCard {
-    display: flex;
-    flex-direction: column !important;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
-  }
-
-  .historyCard img {
-    width: 70% !important;
-    margin-left: 0;
-    margin-right: 0 !important;
-    margin-top: -110px;
-  }
-
-  .historyCard:nth-child(2) img {
-    width: 50% !important
-  }
-
-  .historyCard div {
-    padding: 20px;
-  }
-
-  .historyCard h2 {
-    font-size: 24px;
-  }
-
-  .historyCard p {
-    font-size: 16px;
   }
 }

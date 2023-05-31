@@ -1,4 +1,3 @@
-
 .techniqueContainer {
     position: relative;
     width: auto;
@@ -11,12 +10,12 @@
     z-index: 0;  
     background-color: #003362;
     border-radius: 10px;
-    animation: 0.7s ease-out 0s 1 animatioon;
+    animation: animatioon 0.7s ease-out;
     transition: box-shadow .5s; 
 }
 
 .techniqueContainer:hover {
-    box-shadow: 0px 0px 5px 0 rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px 0 #fff;
 }
 
 .techniqueContainer h2 {
@@ -24,7 +23,7 @@
     margin: 5px 0;
 }
 
-.techniqueContainer div {
+.techniqueContainer div, .techniqueContainer figcaption button {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -32,8 +31,6 @@
     align-items: center;
     padding-bottom: 10px;
 }
-
-
 
 .techniqueContainer img {
     width: 100%;
@@ -53,11 +50,14 @@
     z-index: 1;
 }
 
+.techniqueContainer figcaption p {
+    padding: 15px;
+}
+
 .techniqueContainer figcaption button {
     background-color: #014a8f;
     font-size: 15px;
     border: none;
-    width: 100%;
     height: 30px;
     color: white;
     transition: transform .5s;
@@ -72,16 +72,14 @@ figcaption.toggledDescription {
 }
 
 figcaption.toggledDescription p {
-    padding: 0 10px 10px 10px;
+    padding: 15px;
 }
 
-
 @keyframes animatioon {
-
-   0% {
-    opacity: 0;
-   } 
-   100% {
-    opacity: 1;
-   }
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
 }
