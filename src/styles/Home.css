@@ -27,6 +27,7 @@
 
 .home header h1 {
   font-size: 50px;
+  text-align: center;
 }
 
 .home header div {
@@ -43,11 +44,15 @@
 }
 
 .home section {
-  margin-bottom: 150px;
+  margin: 0 10px 150px 10px;
   padding: 40px;
   background-color: #163b5f95;
   max-width: 960px;
   border-radius: 10px;
+}
+
+.home section:last-child {
+  margin-bottom: 0;
 }
 
 .home h2 {
@@ -108,7 +113,7 @@
 
 @media screen and (max-width: 768px) {
   .home header h1 {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 5px;
   }
 
@@ -119,6 +124,10 @@
   .home header div img {
     width: 90px;
     margin-bottom: 10px;
+  }
+
+  .home section h2 {
+    text-align: center;
   }
   p {
     text-align: justify;

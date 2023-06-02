@@ -6,6 +6,10 @@
   padding: 20px 170px;
 }
 
+.historyCard:last-child {
+  margin-bottom: 0;
+}
+
 .historyTitle {
   display: flex;
   flex-direction: column;
@@ -54,6 +58,7 @@
   flex-direction: row-reverse;
   animation-name: slideInFromLeft;
 }
+
 
 .historyCard img {
   width: 30%;

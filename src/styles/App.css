@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Noto+Serif+JP:wght@200&display=swap');
 
 
 .App {
@@ -8,7 +7,7 @@
   flex-direction: column;
   background-color: #0A2239;
   color: #F1F1F2;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Carter One', cursive;
 }
 
 header {
@@ -33,7 +32,12 @@ main {
 }
 
 footer {
-  padding: 20px 0;
+  padding: 100px 0 5px 0;
   height: auto;
-  background-color: #111c25;
+  background-color: #111c25;  
 }
+
+button {
+  font-family: 'Carter One', cursive;
+}
+

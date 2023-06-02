@@ -6,6 +6,7 @@ import TechniquesProvider from "../context/TechniquesContext";
 
 import Navbar from "./Navbar";
 import Pages from "./Pages";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             <Pages />
           </main>
           <footer>
-            
+            <Footer />
           </footer>
         </div>
       </TechniquesProvider>

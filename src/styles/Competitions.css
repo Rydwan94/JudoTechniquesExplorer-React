@@ -1,5 +1,5 @@
 .competitionsContainer {
-  padding: 20px 0;
+  padding: 20px 0 0 0;
   animation: 1s ease-out 0s 1 changeOpacity;
 }
 
@@ -15,7 +15,7 @@
   background-color: #031a30;
   height: 300px;
   margin: 0 0 -40px;
-  padding: 0 400px;
+  padding: 0 200px;
   padding-bottom: 50px;
 }
 
