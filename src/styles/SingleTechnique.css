@@ -22,6 +22,13 @@
     margin: 5px 0;
 }
 
+.techniqueContainer button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
 .techniqueContainer div, .techniqueContainer figcaption button {
     width: 100%;
     display: flex;

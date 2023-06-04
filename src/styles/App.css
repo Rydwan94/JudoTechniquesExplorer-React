@@ -41,3 +41,28 @@ button {
   font-family: 'Carter One', cursive;
 }
 
+
+.activeScrollBtn {
+  position: fixed;
+  right: 1%;
+  bottom: 3%;
+  font-size: 35px;
+  border: none;
+  padding: 10px 10px 0px 10px;
+  background: #ffffff7d;
+  border-radius: 5px;
+  color: #FFC30B;
+  transition: transform .4s ease-in-out;
+}
+
+.activeScrollBtn:hover {
+  transform: translateY(-10px);
+}
+
+@media screen and (max-width: 768px){
+  .activeScrollBtn {
+    right: 2%;
+    padding: 5px 5px 0 5px;
+    font-size: 25px;
+  }
+}

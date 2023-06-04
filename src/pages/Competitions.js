@@ -29,7 +29,7 @@ const Competitions = () => {
 
   return (
     <div className="competitionsContainer">
-      <section className="title">
+      <header className="title">
         <h2>Upcoming Judo Competitions</h2>
         <p>
           We are excited to share the schedule for the upcoming Judo
@@ -38,7 +38,7 @@ const Competitions = () => {
           calendars and join the excitement!
         </p>
         <button onClick={handleScrollButton}>Check</button>
-      </section>
+      </header>
       <Parallax bgImage={competitionsImage} strength={400}>
         <section className="parallaxContainer">
           <div>{/* <button>Competitions</button> */}</div>

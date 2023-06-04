@@ -18,7 +18,7 @@ const heartStyles = {
   },
 };
 
-const SingleTechnique = ({ gif, description, name, id, active, isLiked }) => {
+const SingleTechnique = ({ img, description, name, id, active, isLiked }) => {
   const { dispatch } = useContext(techniquesContext);
 
   const toggleDescription = (id) => {
@@ -35,12 +35,14 @@ const SingleTechnique = ({ gif, description, name, id, active, isLiked }) => {
     <figure className="techniqueContainer">
       <div>
         <h2>{name}</h2>
+        <button>
         <FaHeart
           onClick={() => toggleLike(id)}
           style={isLiked ? heartStyles.active : heartStyles.inActive}
         />
+        </button>
       </div>
-      <img src={gif} alt={name} />
+      <img src={img} alt={name} />
       <figcaption className={active ? "toggledDescription" : null}>
         <button onClick={() => toggleDescription(id)}>
           {active ? <FaAngleDown /> : <FaAngleUp />}

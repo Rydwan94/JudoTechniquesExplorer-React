@@ -13,14 +13,13 @@
 
 .title {
   background-color: #031a30;
-  height: 300px;
+  height: 350px;
   margin: 0 0 -40px;
   padding: 0 200px;
   padding-bottom: 50px;
 }
 
 .title h2, .upcomingTournaments h2 {
-  font-size: 30px;
   margin-bottom: 20px;
 }
 
@@ -60,7 +59,7 @@
 
 .upcomingTournaments {
   margin: 50px 0;
-  padding: 0 400px;
+  padding: 0 250px;
 }
 
 .upcomingTournaments img {
@@ -81,6 +80,12 @@
   background-color: #123151;
   padding: 10px;
   border-radius: 10px;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.timeLineContent:hover {
+  background-color: #FFC30B;
+  color: #123151;
 }
 
 .timeLineContent:last-of-type {
@@ -93,7 +98,7 @@
   width: 6px;
   background-color: white;
   top: 0;
-  left: 65%;
+  left: 70%;
   bottom: 0;
 }
 
